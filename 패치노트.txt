@@ -28,3 +28,9 @@ Finder_mk3의 목표
 #finder_mk3.5
 	- txt파일에 출력되는 '\n', [ ] 등 불필요한 문자 제거
 	- txt파일의 문단 구분선 추가
+
+#finder_mk3.6
+    - 각종 input 기능을 argparse 모듈로 대체
+
+#finder_mk3.7
+    - argparse 기능을 생성자 매서드에 병합
