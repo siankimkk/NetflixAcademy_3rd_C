@@ -9,10 +9,6 @@ import argparse
 
 class Finder_mk3:
     def __init__(self) -> None:
-        # self.__tar_path = pathlib.Path(n_path)
-        # self.__pattern = re.compile(f'.*{re.escape(keyword)}.*')
-        # self.result_keyword = save_file
-
         parser = argparse.ArgumentParser(description='파일 검색 및 내용 추출기')
 
         parser.add_argument('path', type = pathlib.Path, help='검색할 디렉토리')
@@ -20,14 +16,9 @@ class Finder_mk3:
         parser.add_argument('save_file', type = str, help='저장할 txt 파일명')
 
         parsed_args = parser.parse_args()
-
         self.__tar_path = parsed_args.path
         self.__pattern = re.compile(f'.*{re.escape(parsed_args.keyword)}.*', re.IGNORECASE)
         self.result_keyword = parsed_args.save_file
-
-        # args = parser.parse_args()
-        # fdn = Finder_mk3(args.path, args.keyword, args.save_file)
-        # fdn.writter()
 
     def __del__(self) -> None:
         print('검색을 종료합니다.')
@@ -102,8 +93,6 @@ class Finder_mk3:
 def file_finder():
     fdn = Finder_mk3()
     fdn.writter()
-
-
 
 
 if __name__=='__main__':
