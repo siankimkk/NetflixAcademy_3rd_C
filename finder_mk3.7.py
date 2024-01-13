@@ -22,7 +22,7 @@ class Finder_mk3:
         parsed_args = parser.parse_args()
 
         self.__tar_path = parsed_args.path
-        self.__pattern = re.compile(f'.*{re.escape(parsed_args.keyword)}.*')
+        self.__pattern = re.compile(f'.*{re.escape(parsed_args.keyword)}.*', re.IGNORECASE)
         self.result_keyword = parsed_args.save_file
 
         # args = parser.parse_args()
