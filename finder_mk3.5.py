@@ -48,7 +48,7 @@ class Finder_mk3:
         """
         return(list(self.__tar_path.glob('*.*')))
 
-    def open_file(self, n_path:pathlib.Path):
+    def open_file(self, n_path:pathlib.Path) -> list:
         """
         :param data: 파일 경로
         :return: 파일의 내용 전체를 리스트에 담는다.
@@ -60,7 +60,7 @@ class Finder_mk3:
         return result
 
     @staticmethod
-    def make_final(final_path: pathlib.Path, data:list):
+    def make_final(final_path: pathlib.Path, data:list) -> None:
         """
         :param final_path: 새 txt파일을 저장할 경로
         :param data: 검색된 파일의 경로, 파일명, 내용
@@ -88,4 +88,3 @@ if __name__=='__main__':
 
 
 fdn.writter()
-# fdn.open_file(fdn.get_file_lst)
