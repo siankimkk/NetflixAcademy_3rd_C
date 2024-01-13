@@ -10,6 +10,7 @@ import argparse
 
 class Finder_mk3:
     def __init__(self, n_path: str, keyword: str, save_file: str) -> None:
+        # print('파일 검색기 사용법 : [검색 디렉토리] [검색어] [저장할 txt 파일명])
         self.__tar_path = pathlib.Path(n_path)
         self.__pattern = re.compile(f'.*{re.escape(keyword)}.*')
         self.result_keyword = save_file

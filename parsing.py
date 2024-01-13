@@ -14,9 +14,9 @@ print(args)
 print(type(args))
 
 #인자에 해당하는 인수를 받아 저장할 변수 초기화 1)각 변수에 저장하기
-first="na"
-second="na"
-third="na"
+first="a"
+second="b"
+third="c"
 
 #변수 초기화 확인
 print(first, second, third)
