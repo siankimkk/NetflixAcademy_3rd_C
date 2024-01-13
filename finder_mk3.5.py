@@ -77,7 +77,7 @@ class Finder_mk3:
         home_path = self.get_home_path()
         final = []
         for fin in self.get_file_lst:
-            if self.__pattern.match(fin.name):
+            if self.__pattern.search(fin.name):
                 final += ['경로 : {0} \n파일명 : {1} \n내용:\n{2} \n{3}\n'.
                         format(fin.as_posix(), fin.name, self.open_file(fin), '='*50)]
 
