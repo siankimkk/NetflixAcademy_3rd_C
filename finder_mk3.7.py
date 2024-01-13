@@ -6,7 +6,6 @@ import re
 import argparse
 
 # 3.7 패치 : argparse 모듈을 생성자에 포함시킴
-# 드가자~
 
 class Finder_mk3:
     def __init__(self) -> None:
